@@ -99,32 +99,32 @@ function draw() {
      gameState="end";
    }
  
-    if(particle.body.position.y>480){
-      if(particle.body.position.x<60){
+    if(particle.y>480){
+      if(particle.x<60){
         score=score+500
       }
-      else if(particle.body.position.x<150 && particle.body.position.x>70){
+      else if(particle.x<150 && particle.x>70){
       score=score+500
       }
-      else if(particle.body.position.x<230 && particle.body.position.x>160){
+      else if(particle.x<230 && particle.x>160){
         score=score+500
       }
-      else if(particle.body.position.x<310 && particle.body.position.x>240){
+      else if(particle.x<310 && particle.x>240){
           score=score+500
       }
-      else if(particle.body.position.x<390 && particle.body.position.x>320){
+      else if(particle.x<390 && particle.x>320){
             score=score+100
       }
-      else if(particle.body.position.x<470 && particle.body.position.x>400){
+      else if(particle.x<470 && particle.x>400){
         score=score+100
         }
-     else if(particle.body.position.x<550 && particle.body.position.x>480){
+     else if(particle.x<550 && particle.x>480){
           score=score+100
           }
-      else if(particle.body.position.x<630 && particle.body.position.x>560){
+      else if(particle.x<630 && particle.x>560){
             score=score+200
             }
-     else if(particle.body.position.x<720 && particle.body.position.x>640){
+     else if(particle.x<720 && particle.x>640){
               score=score+200
         }
       else {
