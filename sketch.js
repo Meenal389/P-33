@@ -83,15 +83,7 @@ function draw() {
      plinkos[i].display();
      
    }
-   /*if(frameCount%60===0){
-     particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
-     score++;
-   }
  
-  for (var j = 0; j < particles.length; j++) {
-   
-     particles[j].display();
-   }*/
    for (var k = 0; k < divisions.length; k++) {
      
      divisions[k].display();
@@ -106,6 +98,39 @@ function draw() {
    if(turn===5){
      gameState="end";
    }
+ 
+    if(particle.body.position.y>480){
+      if(particle.body.position.x<60){
+        score=score+500
+      }
+      else if(particle.body.position.x<150 && particle.body.position.x>70){
+      score=score+500
+      }
+      else if(particle.body.position.x<230 && particle.body.position.x>160){
+        score=score+500
+      }
+      else if(particle.body.position.x<310 && particle.body.position.x>240){
+          score=score+500
+      }
+      else if(particle.body.position.x<390 && particle.body.position.x>320){
+            score=score+100
+      }
+      else if(particle.body.position.x<470 && particle.body.position.x>400){
+        score=score+100
+        }
+     else if(particle.body.position.x<550 && particle.body.position.x>480){
+          score=score+100
+          }
+      else if(particle.body.position.x<630 && particle.body.position.x>560){
+            score=score+200
+            }
+     else if(particle.body.position.x<720 && particle.body.position.x>640){
+              score=score+200
+        }
+      else {
+        score=score+200
+      }
+    }
 }
 
 function mousePressed(){
